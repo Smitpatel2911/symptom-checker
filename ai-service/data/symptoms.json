@@ -1,0 +1,182 @@
+{
+  "symptoms": [
+    "fever", "headache", "cough", "sore throat", "runny nose", "sneezing", "body ache",
+    "fatigue", "chest pain", "shortness of breath", "wheezing", "nausea", "vomiting",
+    "diarrhea", "abdominal pain", "heartburn", "loss of appetite", "rash", "itching",
+    "dry skin", "acne", "joint pain", "back pain", "swelling in joints", "dizziness",
+    "palpitations", "high blood pressure", "frequent urination", "excessive thirst",
+    "blurred vision", "ear pain", "toothache", "burning urination", "anxiety",
+    "low mood", "insomnia", "numbness", "seizure", "weight loss", "stiff neck"
+  ],
+  "red_flag_symptoms": ["chest pain", "shortness of breath", "seizure", "stiff neck", "numbness"],
+  "conditions": [
+    {
+      "name": "Common Cold",
+      "specialty": "General Physician",
+      "severity": "low",
+      "symptoms": {"runny nose": 3, "sneezing": 3, "sore throat": 2, "cough": 2, "headache": 1, "fatigue": 1, "fever": 1}
+    },
+    {
+      "name": "Influenza (Flu)",
+      "specialty": "General Physician",
+      "severity": "medium",
+      "symptoms": {"fever": 3, "body ache": 3, "fatigue": 2, "cough": 2, "headache": 2, "sore throat": 1}
+    },
+    {
+      "name": "Asthma",
+      "specialty": "Pulmonologist",
+      "severity": "medium",
+      "symptoms": {"wheezing": 4, "shortness of breath": 3, "cough": 2, "chest pain": 1}
+    },
+    {
+      "name": "Bronchitis",
+      "specialty": "Pulmonologist",
+      "severity": "medium",
+      "symptoms": {"cough": 4, "shortness of breath": 2, "fatigue": 1, "fever": 1, "wheezing": 1, "chest pain": 1}
+    },
+    {
+      "name": "Pneumonia",
+      "specialty": "Pulmonologist",
+      "severity": "high",
+      "symptoms": {"fever": 3, "cough": 3, "shortness of breath": 3, "chest pain": 2, "fatigue": 1}
+    },
+    {
+      "name": "Migraine",
+      "specialty": "Neurologist",
+      "severity": "medium",
+      "symptoms": {"headache": 4, "nausea": 2, "blurred vision": 2, "dizziness": 1, "vomiting": 1}
+    },
+    {
+      "name": "Meningitis (warning pattern)",
+      "specialty": "Neurologist",
+      "severity": "high",
+      "symptoms": {"stiff neck": 4, "fever": 3, "headache": 3, "vomiting": 1, "seizure": 1}
+    },
+    {
+      "name": "Epilepsy / Seizure Disorder",
+      "specialty": "Neurologist",
+      "severity": "high",
+      "symptoms": {"seizure": 5, "dizziness": 1, "numbness": 1}
+    },
+    {
+      "name": "Hypertension",
+      "specialty": "Cardiologist",
+      "severity": "medium",
+      "symptoms": {"high blood pressure": 4, "headache": 2, "dizziness": 2, "palpitations": 1, "blurred vision": 1}
+    },
+    {
+      "name": "Cardiac Arrhythmia",
+      "specialty": "Cardiologist",
+      "severity": "high",
+      "symptoms": {"palpitations": 4, "dizziness": 2, "chest pain": 2, "shortness of breath": 2, "fatigue": 1}
+    },
+    {
+      "name": "Angina / Heart Condition",
+      "specialty": "Cardiologist",
+      "severity": "high",
+      "symptoms": {"chest pain": 5, "shortness of breath": 3, "fatigue": 1, "nausea": 1, "dizziness": 1}
+    },
+    {
+      "name": "Gastroenteritis",
+      "specialty": "Gastroenterologist",
+      "severity": "medium",
+      "symptoms": {"diarrhea": 4, "vomiting": 3, "nausea": 3, "abdominal pain": 3, "fever": 1, "loss of appetite": 1}
+    },
+    {
+      "name": "Acid Reflux (GERD)",
+      "specialty": "Gastroenterologist",
+      "severity": "low",
+      "symptoms": {"heartburn": 5, "nausea": 1, "abdominal pain": 1, "chest pain": 1, "cough": 1}
+    },
+    {
+      "name": "Gastritis / Ulcer",
+      "specialty": "Gastroenterologist",
+      "severity": "medium",
+      "symptoms": {"abdominal pain": 4, "nausea": 2, "heartburn": 2, "loss of appetite": 2, "vomiting": 1}
+    },
+    {
+      "name": "Eczema / Dermatitis",
+      "specialty": "Dermatologist",
+      "severity": "low",
+      "symptoms": {"itching": 4, "rash": 3, "dry skin": 3}
+    },
+    {
+      "name": "Acne Vulgaris",
+      "specialty": "Dermatologist",
+      "severity": "low",
+      "symptoms": {"acne": 5, "itching": 1, "rash": 1}
+    },
+    {
+      "name": "Allergic Reaction",
+      "specialty": "Dermatologist",
+      "severity": "medium",
+      "symptoms": {"rash": 3, "itching": 3, "sneezing": 2, "runny nose": 1}
+    },
+    {
+      "name": "Osteoarthritis",
+      "specialty": "Orthopedist",
+      "severity": "medium",
+      "symptoms": {"joint pain": 4, "swelling in joints": 3, "back pain": 1, "fatigue": 1}
+    },
+    {
+      "name": "Lower Back Strain / Spondylosis",
+      "specialty": "Orthopedist",
+      "severity": "low",
+      "symptoms": {"back pain": 5, "numbness": 1, "joint pain": 1}
+    },
+    {
+      "name": "Rheumatoid Arthritis",
+      "specialty": "Orthopedist",
+      "severity": "medium",
+      "symptoms": {"joint pain": 4, "swelling in joints": 4, "fatigue": 2, "fever": 1}
+    },
+    {
+      "name": "Type 2 Diabetes",
+      "specialty": "Endocrinologist",
+      "severity": "medium",
+      "symptoms": {"frequent urination": 4, "excessive thirst": 4, "fatigue": 2, "blurred vision": 2, "weight loss": 2}
+    },
+    {
+      "name": "Urinary Tract Infection",
+      "specialty": "General Physician",
+      "severity": "medium",
+      "symptoms": {"burning urination": 5, "frequent urination": 3, "abdominal pain": 1, "fever": 1}
+    },
+    {
+      "name": "Ear Infection",
+      "specialty": "ENT Specialist",
+      "severity": "low",
+      "symptoms": {"ear pain": 5, "fever": 1, "headache": 1, "dizziness": 1}
+    },
+    {
+      "name": "Tonsillitis / Pharyngitis",
+      "specialty": "ENT Specialist",
+      "severity": "low",
+      "symptoms": {"sore throat": 5, "fever": 2, "cough": 1, "headache": 1}
+    },
+    {
+      "name": "Sinusitis",
+      "specialty": "ENT Specialist",
+      "severity": "low",
+      "symptoms": {"runny nose": 3, "headache": 3, "sneezing": 1, "fever": 1, "cough": 1}
+    },
+    {
+      "name": "Dental Infection / Cavity",
+      "specialty": "Dentist",
+      "severity": "low",
+      "symptoms": {"toothache": 5, "fever": 1, "headache": 1}
+    },
+    {
+      "name": "Anxiety Disorder",
+      "specialty": "Psychiatrist",
+      "severity": "medium",
+      "symptoms": {"anxiety": 5, "palpitations": 2, "insomnia": 2, "dizziness": 1, "fatigue": 1}
+    },
+    {
+      "name": "Depression",
+      "specialty": "Psychiatrist",
+      "severity": "medium",
+      "symptoms": {"low mood": 5, "insomnia": 2, "fatigue": 2, "loss of appetite": 1, "weight loss": 1}
+    }
+  ]
+}
